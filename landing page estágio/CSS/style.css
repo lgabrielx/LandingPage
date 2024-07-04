@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --orange: #FF6A2F;
+    --white: #fff;
+    --dark: #1e1c2a;
+    --blue: #2201dd;
+    --yellow: #FFB131;
+}
+body{
+    color: var(--dark);
+    background: var(--white);
+}
+.navigation{
+    background-image: url(/img/capaOKintercambio.png);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    background: var(--white);
+    transition: all 0.5s;
+    position: fixed;
+}
+.navigation .logo{
+    color: var(--orange);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.logo span{
+    color: var(--dark);
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+}
+.navigation ul li a{
+    color: var(--dark);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+
+}
+.navigation ul li a:hover{
+    color: var(--orange);
+}
+.navigation i{
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--dark);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--orange);
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    
+}
+.home-text{
+    max-width: 37rem;
+    margin-top: 30px;
+}
+.home-text #text-h4{
+    font-size: 2rem;
+    color: var(--orange);
+    margin-bottom: 1rem;
+}
+.home-text .text-h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+.home-text p{
+    margin-bottom: 3rem;
+}
+.home-bota{
+    padding: 15px 45px;
+    background: var(--orange);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.home-btn:hover{
+    background: #d63a25;
+}
+.home-img img{
+    margin-bottom: 1rem;
+    width: 400px;
+    margin-top: 30px;
+}
+
+#Avideo{
+    margin: 5px;
+    text-align: center;
+
+}
+.text-video{
+    color: var(--orange);
+    font-size: 25px;
+    margin: 15px;
+    margin-top: 8px;
+}
+.video{
+    width: 400px;
+    margin-left: 28%;
+}
+.container{
+    display: flex;
+    margin: 20px;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+.card1{
+    background-color: var(--blue);
+    color: var(--white);
+    margin-right: 20px;
+    width: 600px;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.card2{
+    background-color: var(--blue);
+    color: var(--white);
+    width: 600px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.blog{
+    background-color: var(--yellow);
+    width: 84.4rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.texto{
+    font-size: 15px;
+    color: var(--white);
+    text-align: center;
+    justify-content: center;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+}
+.estudo-emprego{
+    text-align: center;
+    font-weight: 500;
+    background-color: var(--white);
+    margin: 50px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.estudo-emprego>a{
+    color: var(--dark);
+}
+.passagem{
+    text-align: center;
+    font-weight: 500;
+    background-color: var(--white);
+    margin: 50px;
+    width: 300px;
+    padding: 5px;
+    padding-top: 27px;
+    border-radius: 10px;
+}
+.passagem>a{
+    color: var(--dark);
+}
+.int-familia{
+    text-align: center;
+    font-weight: 500;
+    background-color: var(--white);
+    margin: 50px;
+    width: 300px;
+    padding: 5px;
+    padding-top: 35px;
+    border-radius: 10px;
+}
+.int-familia>a{
+    color: var(--dark);
+}
+
+#text-paises{
+    font-size: 26px;
+    text-align: center;
+    color: var(--orange);
+}
+.paises{
+    display: flex;
+    background-color: var(--white);
+    margin-left: 12rem;
+    margin-top: 25px;
+}
+.pais{
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    margin: 20px;
+    border-radius: 15px;
+}
+.imgA{
+    width: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.btn{
+    background-color:yellow;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 3px;
+    margin-bottom: 8px;
+}
+
+.txt-depo{
+    text-align: center;
+    color: var(--orange);
+    margin-top: 50px;
+
+}
+.geral{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.depoimentos{
+    width: 100%;
+    padding: 50px 20px;
+    max-width: 900px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.depoimentos .slide{
+    padding: 40px 60px;
+    cursor: grab;
+}
+.depoimentos .slide:active{
+    cursor: grabbing;
+}
+.depoimentos p.depoi-txt{
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.slide .person p.nome{
+    font-size: 18px;
+    font-weight: 600;
+}
+.slide .person p.funcao{
+    font-size: 14px;
+}
+
+.tudo {
+    font-family: Arial, sans-serif;
+    background-color: var(--yellow);
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    margin: 0;
+}
+
+
+#cadastro{
+        width: 400px;
+        height: 610px;
+        margin: 0 auto; /* centraliza a div horizontalmente */
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra leve */
+        font-family: Arial, sans-serif;
+}
+.cad-h2{
+    color: #ff6a2e;
+    font-size: 30px;
+}
+
+.p-cad {
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 35px;
+}
+
+input {
+    width: 18rem;
+    padding: 8px;
+    margin-left: 35px;
+    box-sizing: border-box;
+    border: 1px solid #5e5d5d;
+    border-radius: 10px;
+}
+
+.p-email{
+    max-width: 18rem;
+    font-size: 13px;
+    margin-left: 37px;
+}
+
+.p-tel{
+    max-width: 18rem;
+    font-size: 13px;
+    margin-left: 37px;
+}
+.b-cad {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0px;
+    background-color: #ff6a2e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.b-cad:hover {
+    background-color: #e64f3b;
+}
+
+#message {
+    margin-top: 10px;
+    margin-left: 50px;
+
+} 
+
+footer{
+    background-color: #ff6a2e;
+    width: 84.38rem;
+    height: 204px;
+    
+}
+
+.contatos{
+    justify-content: space-between;
+}
+.foto {
+    width: 200px;
+
+}
+.embratur{
+    width: 150px;
+    margin-bottom: 80px;
+}
+.cadastur{
+    width: 150px;
+    margin-bottom: 80px;
+    margin-left: 10px;
+}
+.instagram{
+    margin-bottom: 80px;
+    margin-left: 60px;
+    margin-right: 10px;
+    width: 40px;
+}
+.whatsapp{
+    margin-bottom: 80px;
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 40px;
+}
+.linkedin{
+    margin-bottom: 80px;
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 40px;
+}
+.youtube{
+    margin-bottom: 80px;
+    margin-left: 20px;
+    margin-right: 40px;
+    width: 40px;
+}
+.jit{
+    width: 100px;
+    justify-content: right;
+    margin-bottom: 67px;
+    margin-left: 300px;
+}
+
+
+
+@media (max-width: 785px) {
+    .navigation{
+        padding: 18px 20px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2){
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--white);
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .nav-menu.ativo{
+        right: 0;
+    }
+    .nav-item{
+        margin: 16px 0px;
+    }
+
+    .home{
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        gap: 5rem;
+        
+    }
+    .home #text-h4{
+        font-size: 15px;
+    }
+    .home .text-h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .home p{
+        font-size: 15px;
+    }
+    .home-img img{
+        margin-bottom: 1rem;
+        width: 400px;
+        margin-top: 0;
+    }
+
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card1{
+        width: 400px;
+        margin: 30px;
+        
+    }
+    .card2{
+        width: 400px;
+        margin: 30px;
+    }
+
+    #Avideo{
+        margin-top: 350px;
+    }
+    .text-video{
+        font-size: 20px;
+    }
+    .video{
+        margin-left: 0;
+    }
+
+    .blog{
+        max-width: 33rem;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .estudo-emprego{
+        width: 400px;   
+    }
+    .passagem{
+        width: 400px;
+        padding: 10px;
+    }
+    .int-familia{
+        width: 400px;
+        padding: 10px;
+    }
+    
+    #text-paises{
+        font-size: 20px
+    }
+    .paises{
+        flex-direction: column;
+        width: 240px;
+        margin: auto;
+    }
+
+
+    .tudo{
+        justify-content: center;
+        align-items: center;
+        max-width: 33rem;
+        margin: 0;
+    }
+
+    footer{
+        background-color: #ff6a2e;
+        max-width: 33rem;
+        height: 340px;
+        flex-direction: column;
+        
+    }
+    .instagram{
+        margin-bottom: 60px;
+        margin-left: 60px;
+        margin-right: 10px;
+        width: 40px;
+    }
+    .whatsapp{
+        margin-bottom: 60px;
+        margin-left: 20px;
+        margin-right: 10px;
+        width: 40px;
+    }
+    .linkedin{
+        margin-bottom: 60px;
+        margin-left: 20px;
+        margin-right: 10px;
+        width: 40px;
+    }
+    .youtube{
+        margin-bottom: 60px;
+        margin-left: 20px;
+        margin-right: 40px;
+        width: 40px;
+    }
+    .jit{
+        width: 100px;
+        justify-content: right;
+        margin-bottom: 53px;
+        margin-left: 30px;
+    }
+}
